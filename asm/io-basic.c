@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/* constraints: */
+/* = -> write only */
+/* r -> use any register to store operand */
+
 int main() {
   int a = 10, b = 0;
   printf("b = %d\n", b);
