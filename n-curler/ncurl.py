@@ -1,15 +1,14 @@
 import asyncio
-import pathlib
-from copyreg import constructor
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-from dataclasses import dataclass
-import aiofiles
-from typing import IO
 import logging
+import pathlib
 import sys
-from aiohttp import ClientSession
+from dataclasses import dataclass
+from urllib.parse import urljoin
+
+import aiofiles
 import aiohttp
+from aiohttp import ClientSession
+from bs4 import BeautifulSoup
 
 logging.basicConfig(
     format="%(asctime)s %(levelname)s:%(name)s: %(message)s",
@@ -143,8 +142,8 @@ async def get_meta(nid: str, **kwargs) -> Meta:
 
 
 if __name__ == "__main__":
-    import sys
     import os
+    import sys
 
     assert sys.version_info >= (3, 7), "Script requires Python 3.7+."
     assert (
