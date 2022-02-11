@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+# nhentai.net may limit the maximum link number to about 20, manually tested.
+
 # set -x             # for debug
 set -euo pipefail  # fail early
 SCRIPT_DIR="$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )" 
